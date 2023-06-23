@@ -16,6 +16,11 @@ namespace BasicPrograms
                 Console.WriteLine("4:DaysMonthYear");
                 Console.WriteLine("5:SwapNumbers");
                 Console.WriteLine("6:ASCII Value");
+                Console.WriteLine("7:Even Odd Number");
+                Console.WriteLine("8:Positive Negetive Number");
+                Console.WriteLine("9:Largest Number among 2 Number");
+                Console.WriteLine("10:Reverse Number");
+                Console.WriteLine("11:Check Palindrome number");
                 Console.WriteLine("Enter the Choice");
                 choice = int.Parse(Console.ReadLine());
 
@@ -51,6 +56,31 @@ namespace BasicPrograms
                         asciiValue.CheckAsciiValue();
                         break;
 
+                        case 7:
+                            EvenOddNumber evenOddNumber= new EvenOddNumber();
+                        evenOddNumber.CheckEvenOdd();
+                        break;
+
+                        case 8:
+                            PositiveNegative positiveNegative = new PositiveNegative();
+                        positiveNegative.CheckPosNeg(); 
+                        break;
+
+                        case 9:
+                            LargestNumber largestNumber = new LargestNumber();
+                        largestNumber.LargestNumberCheck();
+                        break;
+
+                        case 10:
+                            ReverseNumber reverseNumber = new ReverseNumber();
+                        reverseNumber.CheckReverseNumber();
+                        break;
+
+                        case 11:
+                            Palindrome palindrome = new Palindrome();
+                        palindrome.CheckPalindrome();
+                        break;
+
 
                     default:
                         Console.WriteLine("Invalid choice");
@@ -60,7 +90,7 @@ namespace BasicPrograms
                 Console.ReadKey();
                 Console.Clear();
             }
-            while (choice != 7);
+            while (choice != 13);
 
                 Console.ReadLine();
 
